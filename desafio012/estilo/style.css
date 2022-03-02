@@ -7,7 +7,7 @@
 :root{
     --fonte1: verdana, sans-serif, genava;
     --fonte2: 'Neonderthaw', 'Rubik Beastly', cursive;
-    --fonte3: 'Neonderthaw',
+    --fonte3: Neonderthaw', cursive;
 'Rubik Beastly', cursive;
 }
 
@@ -51,7 +51,9 @@ section{
     font-family: var(--fonte3);
     font-size: 4.5vw;
 }
-
+section >p{
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: white;
     color: black;
@@ -59,11 +61,22 @@ section.normal{
 section.imagem{
     background-color: cadetblue;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.imagem >p{
     background-color: gray;
     display: inline-block;
     padding: 5px;
+}
+section#img001{
+    background-image: url("../imagem/background001.jpg");
+    background-position: right top;
+    
+}
+section#img002{
+    background-image: url("../imagem/background002.jpg");
 }
 
 footer{
@@ -71,4 +84,5 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
+    font-size: 1em;
 }
